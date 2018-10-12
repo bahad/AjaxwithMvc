@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Project3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Calisan">
+    <Key>
+      <PropertyRef Name="calisanID" />
+    </Key>
+    <Property Name="calisanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="isim" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="telefon" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="tecrube" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="Project3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Calisans" EntityType="Self.Calisan" />
+  </EntityContainer>
+</Schema>

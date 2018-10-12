@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Project3ModelStoreContainer" CdmEntityContainer="Project3Entities">
+    <EntitySetMapping Name="Calisans">
+      <EntityTypeMapping TypeName="Project3Model.Calisan">
+        <MappingFragment StoreEntitySet="Calisan">
+          <ScalarProperty Name="calisanID" ColumnName="calisanID" />
+          <ScalarProperty Name="isim" ColumnName="isim" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="tecrube" ColumnName="tecrube" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
